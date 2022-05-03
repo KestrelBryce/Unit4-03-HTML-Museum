@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Description -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Movie age calculator" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="KestrelBryce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- favicon -->
+    <link rel="MOVIE_ICON" sizes="180x180" href="./fav_index/MOVIE_ICON.jpg" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./fav_index/MOVIE_ICON.jpg" />
+    <link rel="icon" type="image/jpg" sizes="16x16" href="./fav_index/MOVIE_ICON.jpg" />
+
+    <!-- Misc style -->
+    <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+    <!-- page title -->
+    <title>Movie age calculator</title>
+  </head>
+  
+
+  <body>
+    <!-- misc MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Movie age calculator</span>
+        </div>
+      </header>
+
+    
+      <!-- page break -->
+      <br></br>
+      
+      <center>
+        <p>Enter your age so that the program can determine the most mature movie you are allowed to see on your own.</p>
+      </center>
+
+      <!-- page break -->
+      <br></br>
+      
+      <!-- image -->
+      <center>
+        <img src="./fav_index/MOVIE-THEATER.webp"
+        width= "900px"
+        height= "auto">
+      </center>
+
+      <!-- page break -->
+      <br></br>
+
+      <center>  <p>Insert your age below:</p>  </center>
+      
+      <!-- User input -->
+  
+        <!-- Enter Age textbox -->   
+        <center>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              step="1"
+              min="1"
+              id="Inserted-age-here"
+            />
+            <label class="mdl-textfield__label" for="Inserted-age-here">Numbers go here...</label>
+            <span class="mdl-textfield__error">…Nobody says their age like that. No normal people, at least. Give a whole number please -_-</span>
+          </div>
+
+
+              <!-- Button -->
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:displayGreeting ()">
+          <p>Check results</p>
+        </button>
+        <br />
+        <p>
+          <div id="greeting">
+
+          </div> 
+        </center>
+
+      </main>
+    </div>
+  </body>
+</html>
